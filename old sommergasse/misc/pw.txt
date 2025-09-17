@@ -1,0 +1,3 @@
+Host: wp1076210.server-he.de
+Username: ftp1076210-sommereck
+Pw: FTPse2019

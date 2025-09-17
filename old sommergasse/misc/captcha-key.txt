@@ -1,0 +1,17 @@
+V2 CLICKBOX:
+site key
+6Ldvf8EUAAAAAHG7lgPnK608Tp9h-RfnL1mtprKu
+secret key
+6Ldvf8EUAAAAAHFMb3jJ-Vj8SM53UjLaqQl1PQpj
+
+V2 INVISIBLE:
+site key
+6LedGsUUAAAAAGnudUMZfl41Y4CcHksOO-kCacR6
+secret key
+6LedGsUUAAAAAAR34_5J2Cm86Ol7xm0Kiof_8L0w
+
+V3:
+site key
+6Lcp0NMUAAAAAL7I3YkY3hZxzuIaTHFXdhOtMqMf
+secret key
+6Lcp0NMUAAAAAMis6YuL65ByNCRbFrUue28pSlgd
