@@ -8,7 +8,7 @@ document.getElementById('load-map-btn').addEventListener('click', function() {
 });
 
 function initMap() {
-	const yourLocation = [49.52739795256828, 8.664293940666886];
+	const yourLocation = [49.50315742562948, 8.601576353439757];
 	
 	const map = L.map('osm-map').setView(yourLocation, 15);
 	
@@ -23,9 +23,9 @@ function initMap() {
 		<div style="text-align: center;">
 			<h4>Nadja Weiß</h4>
 			<h5>Systemische Familienberaterin</h5>
-			<p style="font-size:14px;">Sommergasse 55<br>
-			69469 Weinheim<br>
-			Phone: xxx</p>
+			<p style="font-size:14px !important;">Schaafeckstr. 25-27<br>
+			68542 Heddesheim<br>
+			Phone: 49 (0) 151/295 114 60</p>
 		</div>
 	`);
 	
@@ -53,12 +53,17 @@ $(".hidden-box .button").click(function() {
   $p  = $el.parent();
   $up = $p.parent();
   $ps = $up.find("p:not('.read-more')");
+  $uls = $up.find("ul li");
   
   // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
   $ps.each(function() {
     totalHeight += $(this).outerHeight();
   });
-        
+     
+  $uls.each(function() {
+    totalHeight += $(this).outerHeight()/2+10;
+  });
+
   $up
     .css({
       // Set height to prevent instant jumpdown when max height is removed
