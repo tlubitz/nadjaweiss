@@ -1,37 +1,3 @@
-// Open Street map
-document.getElementById('load-map-btn').addEventListener('click', function() {
-	document.getElementById('map-placeholder').style.display = 'none';
-	document.getElementById('osm-map').style.display = 'block';
-	document.getElementById('map-attribution').style.display = 'block';
-	
-	initMap();
-});
-
-function initMap() {
-	const yourLocation = [49.50315742562948, 8.601576353439757];
-	
-	const map = L.map('osm-map').setView(yourLocation, 15);
-	
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '© OpenStreetMap contributors',
-		maxZoom: 18
-	}).addTo(map);
-	
-	const marker = L.marker(yourLocation).addTo(map);
-	
-	marker.bindPopup(`
-		<div style="text-align: center;">
-			<h4>Nadja Weiß</h4>
-			<h5>Systemische Familienberaterin</h5>
-			<p style="font-size:14px !important;">Schaafeckstr. 25-27<br>
-			68542 Heddesheim<br>
-			Phone: 49 (0) 151/295 114 60</p>
-		</div>
-	`);
-	
-	marker.openPopup();
-}
-
 // function to close nav upon click of nav link
 function closeNav() {
     var navbutton = document.getElementById("navbutton");
@@ -71,7 +37,7 @@ $(".hidden-box .button").click(function() {
       "max-height": 9999
     })
     .animate({
-      "height": totalHeight+80
+      "height": totalHeight+100
     });
   
   // fade out read-more
